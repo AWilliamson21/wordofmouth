@@ -1,0 +1,261 @@
+Title: Django Google Authentication using django-allauth
+Author: Muhd Rahiman
+Date: 10/28/2021
+Code version: 0.45.0
+URL: https://dev.to/mdrhmn/django-google-authentication-using-django-allauth-18f8
+Software License: MIT License 
+
+Title: django-allauth docs: Configuration
+Author: Raymond Penners
+Date: 2017
+Code version: 0.49.0
+URL: https://django-allauth.readthedocs.io/en/latest/configuration.html
+Software License: MIT License
+
+Title: Django pass variable from view to HTML template
+Author: eTutorialsPoint
+Date: 2016 - 2022
+Code version: Django v4.0
+URL: https://www.etutorialspoint.com/index.php/257-django-pass-variables-from-view-to-html-template
+Software License: BSD
+
+Title: Introduction
+Author: Bootstrap docs
+Date: -
+Code version: v5.0.2
+URL: https://getbootstrap.com/docs/5.0/getting-started/introduction/
+Software License: MIT
+
+Title: CSS Rounded Corners
+Author: W3Schools
+Date: 1999 - 2022
+Code version: v3.0
+URL: https://www.w3schools.com/css/css3_borders.asp
+Software License: BSD
+
+Title: loop backwards using django template
+Author: Joran Beasley
+Date: 10/01/2012
+Code version: Django v4.0
+URL: https://stackoverflow.com/questions/12680691/loop-backwards-using-django-template
+Software License: BSD
+
+Title: TextField - Django Models
+Author: NaveenArora
+Date: 02/12/2020
+Code version: Django v4.0
+URL: https://www.geeksforgeeks.org/textfield-django-models/
+Software License: BSD
+
+Title: Django: SocialApp matching query does not exist
+Author: Sayad Ahmed Shaurov
+Date: 10/25/2020
+Code version: Django v4.0
+URL: https://stackoverflow.com/questions/15409366/django-socialapp-matching-query-does-not-exist
+Software License: BSD
+
+Title: Bootstrap dropdown not working and not dropping down
+Author: Chaz Carothers
+Date: 11/05/2021
+Code version: v5.0
+URL: https://stackoverflow.com/questions/69859520/bootstrap-dropdown-not-working-and-not-dropping-down
+Software License: MIT
+
+Title: Django template tag to truncate text
+Author: Banjer
+Date: 04/24/2012
+Code version: Django v4.0
+URL: https://stackoverflow.com/questions/5235994/django-template-tag-to-truncate-text
+Software License: BSD
+
+Title: How to populate select option dropdown with database info in django
+Author: Imran Rahman
+Date: 04/18/2021
+Code version: v5.0
+URL: https://stackoverflow.com/questions/67144636/how-to-populate-select-option-dropdown-with-database-info-in-django
+Software License: BSD
+
+Title: HTML <input> accept Attribute
+Author: W3Schools
+Date: 1999 - 2022
+Code version: v5.0
+URL: https://www.w3schools.com/tags/att_input_accept.asp
+Software License: BSD
+
+Title: Reference list item within Django template?
+Author: Mike DeSimone
+Date: 01/10/2011
+Code version: Django v4.0
+URL: https://stackoverflow.com/questions/4651172/reference-list-item-by-index-within-django-template
+Software License: BSD
+
+Title: How to Preserve White Space and line breaks in Django?
+Author: Field Boy
+Date: 02/18/2021
+Code version: Django v4.0
+URL: https://stackoverflow.com/questions/66267017/how-to-preserve-white-space-and-line-breaks-in-djangohttps://stackoverflow.com/questions/66267017/how-to-preserve-white-space-and-line-breaks-in-django
+Software License: BSD
+
+Title: Containers
+Author: Bootstrap docs
+Date: -
+Code version: Bootstrap v5.0.2
+URL: https://getbootstrap.com/docs/5.0/layout/containers/
+Software License: MIT
+
+Title: Django - how to make ImageField/FileField optional
+Author: orthodoxpirate
+Date: 10/15/2014
+Code version: Django v4.0
+URL: https://stackoverflow.com/questions/2677637/django-how-to-make-imagefield-filefield-optional
+Software License: BSD
+
+Title: Model Field Reference
+Author: Django Software Foundation and individual contributors
+Date: 2005-2022
+Code Version: Django v4.0
+URL: https://docs.djangoproject.com/en/4.0/ref/models/fields/
+Software License: BSD
+
+Title: Model Field Reference
+Author: Django Software Foundation and individual contributors
+Date: 2005-2022
+Code Version: Django v4.0
+URL: https://docs.djangoproject.com/en/4.0/ref/models/fields/
+Software License: BSD
+
+Title: Django Google Drive Storage
+Author: torre76, conformist-mw, mca10, codingjoe, ex5, marcgibbons, MarlonJD, thismatters, ugaemi,
+        gunthercox, mhsekhavat, saileshdev, flywindy, CristianFonseca03
+Date: 05/11/2014 - 11/28/2021
+Code version: 1.6.0
+URL: https://django-googledrive-storage.readthedocs.io/en/latest/
+Software License: BSD-3
+
+Title: django [Errno2] No such file or directory:
+Author: eaithy
+Date: 01/07/2020
+Code version: Django v4.0
+URL: https://stackoverflow.com/questions/21370298/django-errno-2-no-such-file-or-directory
+Software License: BSD
+
+Title: Settings
+Author: Django Software Foundation and individual contributors
+Date: 2005-2022
+Code version: Django v4.0
+URL: https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+Software License: BSD
+
+Title: Security in Django
+Author: Django Software Foundation and individual contributors
+Date: 2005-2022
+Code version: Django v2.2
+URL: https://docs.djangoproject.com/en/2.2/topics/security/#ssl-https
+Software License: BSD
+
+Title: Settings
+Author: Django Software Foundation and individual contributors
+Date: 2005-2022
+Code version: Django v4.0
+URL: https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
+Software License: BSD
+
+Title: Internationalization and localization
+Author: Django Software Foundation and individual contributors
+Date: 2005-2022
+Code version: Django v4.0
+URL: https://docs.djangoproject.com/en/4.0/topics/i18n/
+Software License: BSD
+
+Title: Python time zones: Why is EST off by one hour? (pytz/dateutil)
+Author: Matt Johnson-Pint
+Date: 10/01/2020
+Code version: Django v4.0
+URL: https://stackoverflow.com/questions/64159241/python-time-zones-why-is-est-off-by-one-hour-pytz-dateutil
+Software License: BSD
+
+Title: How to manage static files (e.g. images, JavaScript, CSS)
+Author: Django Software Foundation and individual contributors
+Date: 2005-2022
+Code version: Django v4.0
+URL: https://docs.djangoproject.com/en/4.0/howto/static-files/
+Software License: BSD
+
+Title: Settings
+Author: Django Software Foundation and individual contributors
+Date: 2005-2022
+Code version: Django v4.0
+URL: https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
+Software License: BSD
+
+Title: Configuration
+Author: pennersr, julen, stantond, jleclanche, berkerpeksag, ERM, hartym, danidee10, mick88, 
+        matthijskooijman, manuganji, LuanP, iarp, gionniboy, jessamynsmith, Flimm, BernhardPosselt, 
+        esacteksab, aagustin, AstraLuma
+Date: 2017 - 2022
+Code version: 7.6.2
+URL: https://django-allauth.readthedocs.io/en/latest/configuration.html
+Software License: MIT
+
+Title: Django Tutorial Part 10: Testing a django web application
+Author: MDN contributors
+Date: 1998 - 2022
+Code version: Django v4.0
+URL: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing
+Software License: BSD
+
+Title: django-socialregistration-with-google-apps
+Author: flashingpumpkin, lizrice
+Date: 10/05/2009 - 02/01/2013
+Code version: Django v4.0
+URL: https://github.com/zapier/django-socialregistration-with-google-apps/blob/master/socialregistration/tests.py
+Software License: BSD
+
+Title: Django Reverse with arguments '()' and keyword arguments '{}' not found
+Author: miki725
+Date: 11/02/2012
+Code version: Django v4.0
+URL: https://stackoverflow.com/questions/13202385/django-reverse-with-arguments-and-keyword-arguments-not-found
+Software License: BSD
+
+Title: Source code for django.core.files.uploadedfile
+Author: Django Software Foundation and individual contributors
+Date: 2005-2022
+Code version: Django v3.0
+URL: https://docs.djangoproject.com/en/3.0/_modules/django/core/files/uploadedfile/
+Software License: BSD
+
+Title: datetime - Basic date and time types
+Author: Python Software Foundation
+Date: 2001 - 2022
+Code version: v3.9
+URL: https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
+Software License: Zero Clause BSD
+
+Title: Can I have multiple lists in a Django generic.ListView?
+Author: Frank Wiles
+Date: 09/15/2013
+Code version: Django v4.0
+URL: https://stackoverflow.com/questions/18812505/can-i-have-multiple-lists-in-a-django-generic-listview
+Software License: BSD
+
+Title: Django - Google Drive API how to store and retrieve files using Django
+Author: Debraj Bhal
+Date: 07/29/2021
+Code version: v3.0
+URL: https://stackoverflow.com/questions/63460794/django-google-drive-api-how-to-store-and-retrieve-file-using-django
+Software License: BSD-3
+
+Title: Popovers
+Author: Bootstrap docs
+Date: -
+Code version: v5.0.2
+URL: https://getbootstrap.com/docs/5.0/components/popovers/
+Software License: MIT
+
+Title: HTML Styles - CSS
+Author: W3Schools
+Date: 1999-2022
+Code version: CSS3
+URL: https://www.w3schools.com/html/html_css.asp
+Software License: BSD

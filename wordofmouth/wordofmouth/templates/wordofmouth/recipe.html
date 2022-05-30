@@ -1,0 +1,181 @@
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+
+{% load socialaccount %}
+<html>
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top">
+    <div class="container-fluid">
+        <div class="text-center">
+            <a href="/">
+                <img src="https://media.discordapp.net/attachments/939589690087051324/970932069368737842/WORD_OF_MOUTH_4.png" class="rounded" width="250" alt="...">
+            </a>
+        </div>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto my-2 my-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href={% url 'browserecipes' %} role="button">Browse Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href={% url 'browsearticles' %} role="button">Browse Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href={% url 'addrecipe' %} role="button">Add Recipe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href={% url 'addarticle' %} role="button">Add Article</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+          <div class="nav-item dropdown">
+            <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+               id="navbarDropdownMenuLink" role="button">
+                Welcome, {{ user.username }}
+            </a>
+            <ul aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu">
+                <li><a class="dropdown-item" href="/logout">Log out?</a></li>
+            </ul>
+        </div>
+      </span>
+        </div>
+    </div>
+</nav>
+<body>
+
+<head>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container-fluid d-flex justify-content-center align-items-center flex-column" >
+        <h1 class="text-center">{{ title }}</h1>
+        <div class="row text-center">
+            <p>Published By: {{ author }}</p>
+            <p class="text-muted">{{ date }}</p>
+        </div>
+    </div>
+
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col ms-5">
+                <!-- ingredients -->
+                <div class="d-flex justify-content-start align-items-start flex-column">
+                    <p class="fw-bold text-center"> Ingredients: </p>
+                    {{ ingredients|linebreaks }} <!-- https://stackoverflow.com/questions/66267017/how-to-preserve-white-space-and-line-breaks-in-djangohttps://stackoverflow.com/questions/66267017/how-to-preserve-white-space-and-line-breaks-in-django -->
+
+                </div>
+                <!-- instructions -->
+                <div class="d-flex justify-content-start align-items-start flex-column">
+                    <p class="fw-bold text-center"> Instructions: </p>
+                    {{ instructions|linebreaks }} <!-- https://stackoverflow.com/questions/66267017/how-to-preserve-white-space-and-line-breaks-in-djangohttps://stackoverflow.com/questions/66267017/how-to-preserve-white-space-and-line-breaks-in-django -->
+                </div>
+
+                <div>
+                <form action="{% url 'recipe' pk %}" method="post" style="margin-top: 1.3em;">
+                    <input class="form-control" value={{user.username}} name="name" type="hidden">
+                    <label for="comment_field" class="form-label "><b>Leave a comment:</b></label> <br>
+                    <textarea name="comment_field" class="form-control" style="width:400px;height:150px;"></textarea>
+                    {% csrf_token %}
+                    <br>
+                    <button type="submit" class="btn btn-primary  btn-lg">Submit</button>
+                </form>
+                </div>
+
+                <p class="fw-bold"> Comments: </p>
+                {% if comments %}
+                {% for comment in comments reversed %}
+                    <div class="comments" style="padding: 10px;">
+                    <p class="font-weight-bold">
+                    {{ comment.name }}
+                    <span class=" text-muted font-weight-normal">
+                        {{ comment.time_posted }}
+                    </span>
+                    </p>
+                    {{ comment.body|linebreaks }}
+                    </div>
+                {% endfor %}
+                {% else %}
+                No comments here
+                {% endif %}
+            </div>
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                {% if photo_url %}
+                <img src={{photo_url.url}} class="rounded float-end" alt="..." style="width:600px; height: 400px; object-fit: cover">
+                {% endif %}
+                </div>
+                <br>
+
+                <div class="col d-flex justify-content-center align-items-center flex-column">
+                <!-- forks -->
+                <br>
+                <div class="btn-group">
+                    <a type="button" class="btn btn-warning" href="{% url 'fork' pk %}">Fork Recipe</a>
+                    <!--
+                        Title: Popovers
+                        Author: Bootstrap docs
+                        Date: -
+                        Code version: v5.0.2
+                        URL: https://getbootstrap.com/docs/5.0/components/popovers/
+                        Software License: MIT
+                    -->
+                    <br>
+                    <!-- Title: HTML Styles - CSS
+                         Author: W3Schools
+                         Date: 1999-2022
+                         Code version: CSS3
+                         URL: https://www.w3schools.com/html/html_css.asp
+                         Software License: BSD 
+                    -->
+                    <style>
+                        .btn.btn-info {
+                            background-color: rgb(245, 225, 148);
+                            border-color:rgb(245, 225, 148);
+                        }
+                      </style>
+                    <a id="pop" data-bs-content="This feature allows you to edit a recipe’s title, ingredients, directions, and image to repost as your own." data-bs-placement="bottom" data-bs-toggle="popover" class="btn btn-info" data-original-title="Popover on left" data-html="true">?</a>
+                </div>
+                <br>
+                <p class="fw-bold">Similar Recipes: </p>
+	            {% if forks %}
+	            {% for fork in forks reversed%}
+                <div class="card mb-3" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-title"> {{fork.title}}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Published By: {{ fork.author }}</h6>
+                        <p class="card-text">{{ fork.descriptions.0 | truncatechars:200 }} </p>
+                        <a class="stretched-link" href="{% url 'forkpage' pk fork.pk %}"></a>
+                        <p class="card-text"><small class="text-muted">{{fork.date}}</small></p>
+                        <span class="badge rounded-pill bg-warning text-dark"> Forked Recipe </span>
+                    </div>
+                    <br>
+                </div>
+                {% endfor %}
+                {% else %}
+                <p>No similar recipes have been posted.</p>
+                {% endif %}
+            </div> <!-- end forks -->
+            </div>
+        </div>
+        <br>
+    </div>
+</body>
+</html>
+
+<script>
+        [...document.querySelectorAll('[data-bs-toggle="popover"]')]
+  .forEach(el => new bootstrap.Popover(el))
+</script>

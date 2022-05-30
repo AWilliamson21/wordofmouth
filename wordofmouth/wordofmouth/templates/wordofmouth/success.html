@@ -1,0 +1,23 @@
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+
+{% load socialaccount %}
+<html>
+
+<!-- TODO: 
+    - DONE (add functionality so that the success page confirms success submission of the 
+      recipe, i.e. "You have successfully submitted [recipe title]")
+    - maybe add button to redirect back to home page (i.e. wordofmouth) where this submitted 
+      recipe should now be viewable -->
+
+<head>
+    <title>Success</title>
+</head>
+
+<body>
+    <h1>Success!</h1>
+    Your recipe <b> {{ title }} </b>was submitted!
+</body>
+
+</html>
