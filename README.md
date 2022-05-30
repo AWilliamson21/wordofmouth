@@ -1,1 +1,1 @@
-The initial commit for this repo is the result of CS 3240 (Advanced Software Development) at UVA. I worked with a group of 4 peers to create this site, although the history of the repo has been obscured to hide sensitive log-in information.
+The initial commit for this repo is the result of CS 3240 (Advanced Software Development) at UVA. I worked with a group of 4 peers to create this site, although the history of the repo has been obscured to hide sensitive log-in information. The current result of this project is hosted at https://wordofmouth-b01.herokuapp.com/.
